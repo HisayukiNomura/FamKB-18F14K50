@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>USBKB</name>
+            <name>USB Device - HID - Keyboard</name>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <sourceEncoding>Shift_JIS</sourceEncoding>
+            <asminc-extensions/>
+            <creation-uuid>55de8476-9f90-4568-9ed0-1a4e7e4e57be</creation-uuid>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>.</sourceRootElem>
+                <sourceRootElem>../boards</sourceRootElem>
+                <sourceRootElem>../app_config</sourceRootElem>
+                <sourceRootElem>../../../../../../bsp</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>LPCUSBDK_18F14K50</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>
