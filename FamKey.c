@@ -194,7 +194,7 @@ void ReadKey(void)
 {
     // デバイスセレクト
     //    IO_DEVSEL_RB7_SetHigh();
-    __delay_us(200);
+    __delay_us(50);
     // リセット
     KBReset();
 

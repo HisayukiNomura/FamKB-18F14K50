@@ -2,15 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/E:/Programing/Microchip/USBKB.X/nbproject/Makefile-LPCUSBDK_18F14K50.mk</file>
-            <file>file:/E:/Programing/Microchip/USBKB.X/FamKey.h</file>
-            <file>file:/E:/Programing/Microchip/USBKB.X/usb_config.h</file>
-            <file>file:/E:/Programing/Microchip/USBKB.X/FamKey.c</file>
-            <file>file:/E:/Programing/Microchip/USBKB.X/app_device_keyboard.c</file>
-            <file>file:/E:/Programing/Microchip/USBKB.X/app_led_usb_status.c</file>
-            <file>file:/E:/Programing/Microchip/USBKB.X/globaldef.h</file>
-            <file>file:/E:/Programing/Microchip/USBKB.X/main.c</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
