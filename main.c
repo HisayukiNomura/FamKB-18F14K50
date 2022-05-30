@@ -42,29 +42,7 @@ int main(void)
 {
     SYSTEM_Initialize( SYSTEM_STATE_USB_START );
     SYSTEM_InitializeMCC();
-    /*
-    while(1) 
-    {
-        IO_RC7_SetHigh();
-        IO_RC6_SetLow();
-        IO_RC5_SetLow();
-         
-    }
-    */
-    /*
-     while(1) {
-        if ( IO_D40_RC0_GetValue() != 0) {
-            IO_RC7_SetHigh();
-        } else {
-            IO_RC7_SetLow(); 
-        }
-        if ( IO_D51_RC1_GetValue() != 0) {
-            IO_RC6_SetHigh();
-        } else {
-            IO_RC6_SetLow(); 
-        }        
-    }
-    */  
+
     
     USBDeviceInit();
     USBDeviceAttach();
