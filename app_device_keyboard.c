@@ -378,13 +378,12 @@ void APP_KeyboardTasks(void)
             inputReport.modifiers.bits.rightGUI = (modifier & ATBKEY_RIGHTGUI)  ? 1 : 0;
             
             // 一般キーの処理
-            for (int i = 0 ; i < 6;i++) {
+            for (int i = 0 ; i < 6;i++) {               
                 if ( KeyReport[i] !=0) {
-                    inputReport.keys[i] =  KeyReport[i];
+                    inputReport.keys[i] = KeyReport[i];
                     keyCnt++;
                 }
             }
-            
         }
         
         //新しいパケット内容が、最近送信されたパケット内容と何らかの違いがあるかどうかを確認する。
@@ -395,7 +394,8 @@ void APP_KeyboardTasks(void)
                 break;
             }
         }
-
+        
+        
         // ホストがアイドルレートを0以外（事実上「無限」）に設定しているかどうかを
         // 確認する。アイドルレートが無限でない場合、最後のパケットを送信してから
         // 十分な時間が経過し、新しい反復パケットを送信する時間であるかどうかを
@@ -437,6 +437,7 @@ void APP_KeyboardTasks(void)
     }
     return;		
 }
+
 
 /*
  * レポートに準じてCAPSLOCKランプを制御する。RC5を使おう。

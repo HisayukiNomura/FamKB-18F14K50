@@ -38,6 +38,8 @@ please contact mla_licensing@microchip.com
 #include "FamKey.h"
 #include "mcc_generated_files/mcc.h"
 
+#define DEBUG_KEYCODE       // キーボード本体をつながないでテストするときのため
+
 int main(void)
 {
     SYSTEM_Initialize( SYSTEM_STATE_USB_START );
@@ -49,7 +51,7 @@ int main(void)
 
   
     IO_DEVSEL_RB7_SetHigh();
-
+    int cnt = 0;
     while(1)
     {
         SYSTEM_Tasks();
@@ -69,9 +71,19 @@ int main(void)
         USBDeviceTasks();
         #endif
 
-        /* Run the keyboard demo tasks. */
+        #if defined(DEBUG_KEYCODE)
+        /* Run the keyboard demo tasks. - for debug */
         ReadKey();
-
+        if (cnt > 500 ) {
+            //KeyReport[0] = 0x89;
+            KeyReport[0] = 0x04;
+            KeyRepIdx=1;
+            cnt = 0;
+        } else {
+            cnt++;
+        }
+         #endif
+         
         APP_KeyboardTasks();
     }//end while
 }//end main
